@@ -3,30 +3,30 @@
 </template>
 
 <script>
-import { DataSet, DataView, Graph2d } from 'vis';
-import { mountVisData, translateEvent } from '../utils';
+  import {DataSet, DataView, Graph2d} from 'vis';
+  import {mountVisData, translateEvent} from '../utils';
 
-export default {
-  name: 'graph2d',
-  props: {
-    groups: {
-      type: [Array, DataSet, DataView],
-      default: () => []
-    },
-    items: {
-      type: [Array, DataSet, DataView],
-      default: () => []
-    },
-    events: {
-      type: Array,
-      default: () => [
-        'click',
-        'contextmenu',
-        'currentTimeTick',
-        'doubleClick',
-        'changed',
-        'rangechange',
-        'rangechanged',
+  export default {
+    name: 'graph2d',
+    props: {
+      groups: {
+        type: [Array, DataSet, DataView],
+        default: () => []
+      },
+      items: {
+        type: [Array, DataSet, DataView],
+        default: () => []
+      },
+      events: {
+        type: Array,
+        default: () => [
+          'click',
+          'contextmenu',
+          'currentTimeTick',
+          'doubleClick',
+          'changed',
+          'rangechange',
+          'rangechanged',
         'timechange',
         'timechanged'
       ],

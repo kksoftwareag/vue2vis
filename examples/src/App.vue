@@ -153,29 +153,29 @@
 </template>
 
 <script>
-import { Timeline, Graph2d, Network } from 'vue2vis';
+  import {Graph2d, Network, Timeline} from 'vue2vis';
 
-export default {
-  data: () => ({
-    timelineEvents: '',
-    timelineWithoutGroupsEvents: '',
-    timeline: {
-      groups: [
-        {
-          id: 0,
-          content: 'Group 1',
-        },
-      ],
-      items: [
-        {
-          id: 2,
-          group: 0,
-          content: 'item 2',
-          start: '2014-04-14',
-        },
-        {
-          id: 3,
-          group: 0,
+  export default {
+    data: () => ({
+      timelineEvents: '',
+      timelineWithoutGroupsEvents: '',
+      timeline: {
+        groups: [
+          {
+            id: 0,
+            content: 'Group 1',
+          },
+        ],
+        items: [
+          {
+            id: 2,
+            group: 0,
+            content: 'item 2',
+            start: '2014-04-14',
+          },
+          {
+            id: 3,
+            group: 0,
           content: 'item 3',
           start: '2014-04-18',
         },
@@ -370,7 +370,7 @@ export default {
 </script>
 
 <style>
-@import 'vue2vis/dist/vue2vis.css';
+  @import '~vis-network';
 * {
   font-family: sans-serif;
 }

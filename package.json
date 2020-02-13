@@ -1,6 +1,6 @@
 {
   "name": "vue2vis",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Vue2 component that helps with Visjs interaction",
   "jsnext": "dist/vue2vis.js",
   "main": "dist/vue2vis.min.js",
@@ -26,11 +26,15 @@
   "license": "MIT",
   "keywords": [
     "vue",
-    "vis",
-    "visjs"
+    "vis-network",
+    "vis-data",
+    "vis-timeline",
+    "vis-graph2d"
   ],
   "dependencies": {
-    "vis": "^4.21.0"
+    "vis-network": "^7.3.4",
+    "vis-timeline": "^7.1.0",
+    "vis-data": "^6.3.5"
   },
   "peerDependencies": {
     "vue": "~2.x"

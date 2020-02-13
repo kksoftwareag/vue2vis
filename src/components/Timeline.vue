@@ -3,30 +3,31 @@
 </template>
 
 <script>
-import { DataSet, DataView, Timeline } from 'vis';
-import { mountVisData, translateEvent } from '../utils';
+  import {Timeline} from "vis-timeline";
+  import {DataSet, DataView} from 'vis-data';
+  import {mountVisData, translateEvent} from '../utils';
 
-export default {
-  name: 'timeline',
-  props: {
-    groups: {
-      type: [Array, DataSet, DataView],
-      default: () => []
-    },
-    items: {
-      type: [Array, DataSet, DataView],
-      default: () => []
-    },
-    events: {
-      type: Array,
-      default: () => [
-        'click',
-        'contextmenu',
-        'currentTimeTick',
-        'doubleClick',
-        'drop',
-        'mouseOver',
-        'mouseDown',
+  export default {
+    name: 'timeline',
+    props: {
+      groups: {
+        type: [Array, DataSet, DataView],
+        default: () => []
+      },
+      items: {
+        type: [Array, DataSet, DataView],
+        default: () => []
+      },
+      events: {
+        type: Array,
+        default: () => [
+          'click',
+          'contextmenu',
+          'currentTimeTick',
+          'doubleClick',
+          'drop',
+          'mouseOver',
+          'mouseDown',
         'mouseUp',
         'mouseMove',
         'groupDragged',
