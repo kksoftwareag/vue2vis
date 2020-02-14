@@ -1,5 +1,5 @@
 # vue2vis
-
+## Note: Only vis-network has been restored to full functionality. If you need other parts of visjs supported, hit me up.
 > Vue2 component that helps with <a href="http://visjs.org/">Visjs</a> interaction
 
 <p align="center">
